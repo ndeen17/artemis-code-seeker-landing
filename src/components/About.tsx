@@ -34,7 +34,7 @@ const About = () => {
           {aboutItems.map((item, index) => (
             <div
               key={item.title}
-              className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-lg rounded-2xl p-8 hover:from-slate-700/50 hover:to-slate-800/50 transition-all duration-300 transform hover:scale-105 border border-slate-700/50"
+              className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 hover:bg-blue-500/20 transition-all duration-300 transform hover:scale-105 border border-blue-400/20"
               style={{
                 animationDelay: `${index * 0.2}s`
               }}

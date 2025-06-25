@@ -15,24 +15,44 @@ const Hero = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const particles: Array<{
+    const codeSnippets = [
+      'const ai = new AI();',
+      'function analyze(code) {',
+      'if (skill > threshold)',
+      '{ return qualified; }',
+      'import { talent } from "artemis"',
+      'engineer.assess()',
+      'while (recruiting) {',
+      'const result = await scan();',
+      'export default talent;',
+      'console.log("hiring");',
+      'return bestMatch;',
+      '} catch (error) {',
+      'skills.map(s => s.level)',
+      'npm install artemis-ai',
+      'git commit -m "talent"'
+    ];
+
+    const floatingCodes: Array<{
       x: number;
       y: number;
       vx: number;
       vy: number;
-      size: number;
+      text: string;
       opacity: number;
+      size: number;
     }> = [];
 
-    // Create particles
-    for (let i = 0; i < 100; i++) {
-      particles.push({
+    // Create floating code snippets
+    for (let i = 0; i < 15; i++) {
+      floatingCodes.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        size: Math.random() * 2 + 1,
-        opacity: Math.random() * 0.5 + 0.2
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+        text: codeSnippets[Math.floor(Math.random() * codeSnippets.length)],
+        opacity: Math.random() * 0.3 + 0.1,
+        size: Math.random() * 8 + 12
       });
     }
 
@@ -41,34 +61,18 @@ const Hero = () => {
       
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      particles.forEach(particle => {
-        particle.x += particle.vx;
-        particle.y += particle.vy;
+      floatingCodes.forEach(code => {
+        code.x += code.vx;
+        code.y += code.vy;
 
-        if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
-        if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
+        // Bounce off edges
+        if (code.x < 0 || code.x > canvas.width - 200) code.vx *= -1;
+        if (code.y < 0 || code.y > canvas.height) code.vy *= -1;
 
-        ctx.beginPath();
-        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(147, 51, 234, ${particle.opacity})`;
-        ctx.fill();
-      });
-
-      // Draw connections
-      particles.forEach((particle, i) => {
-        particles.slice(i + 1).forEach(otherParticle => {
-          const dx = particle.x - otherParticle.x;
-          const dy = particle.y - otherParticle.y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-
-          if (distance < 100) {
-            ctx.beginPath();
-            ctx.moveTo(particle.x, particle.y);
-            ctx.lineTo(otherParticle.x, otherParticle.y);
-            ctx.strokeStyle = `rgba(147, 51, 234, ${0.1 * (1 - distance / 100)})`;
-            ctx.stroke();
-          }
-        });
+        // Draw code snippet
+        ctx.font = `${code.size}px 'Courier New', monospace`;
+        ctx.fillStyle = `rgba(96, 165, 250, ${code.opacity})`;
+        ctx.fillText(code.text, code.x, code.y);
       });
 
       requestAnimationFrame(animate);
@@ -97,7 +101,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Assess Software Engineers
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
               skill level by analyzing code
             </span>
             <span className="block text-white">in their portfolio</span>
@@ -110,10 +114,10 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
               Book a Demo
             </button>
-            <button className="border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
+            <button className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
               Learn More
             </button>
           </div>

@@ -25,7 +25,7 @@ const Platforms = () => {
           {platforms.map((platform, index) => (
             <div
               key={platform.name}
-              className="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
+              className="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-blue-500/20 transition-all duration-300 transform hover:scale-105 border border-blue-400/20"
               style={{
                 animationDelay: `${index * 0.1}s`
               }}
@@ -37,7 +37,7 @@ const Platforms = () => {
         </div>
         
         <div className="text-center mt-8">
-          <p className="text-purple-400 font-semibold">+20 more platforms supported</p>
+          <p className="text-blue-400 font-semibold">+20 more platforms supported</p>
         </div>
       </div>
     </section>
