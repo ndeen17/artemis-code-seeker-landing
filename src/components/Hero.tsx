@@ -30,7 +30,35 @@ const Hero = () => {
       '} catch (error) {',
       'skills.map(s => s.level)',
       'npm install artemis-ai',
-      'git commit -m "talent"'
+      'git commit -m "talent"',
+      'class Engineer {',
+      'constructor(skills) {',
+      'this.skills = skills;',
+      '}',
+      'evaluate() {',
+      'return this.analyze();',
+      'async fetchRepos() {',
+      'const response = await',
+      'github.getRepos();',
+      'for (let i = 0;',
+      'i < repos.length; i++) {',
+      'analyzeTalent(repo);',
+      'let score = 0;',
+      'Object.keys(skills)',
+      '.forEach(skill => {',
+      'if (skill.level > 8) {',
+      'hireable = true;',
+      'break;',
+      'const algorithm = new',
+      'TalentMatcher();',
+      'return {qualified: true}',
+      'await processCandidate()',
+      'skills.python += 10;',
+      'if (experience > 5) {',
+      'senior = true;',
+      'debugger;',
+      '// TODO: hire this dev',
+      'match.confidence = 0.95'
     ];
 
     const floatingCodes: Array<{
@@ -43,16 +71,16 @@ const Hero = () => {
       size: number;
     }> = [];
 
-    // Create floating code snippets
-    for (let i = 0; i < 15; i++) {
+    // Create more floating code snippets for better animation
+    for (let i = 0; i < 25; i++) {
       floatingCodes.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.3,
-        vy: (Math.random() - 0.5) * 0.3,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
         text: codeSnippets[Math.floor(Math.random() * codeSnippets.length)],
-        opacity: Math.random() * 0.3 + 0.1,
-        size: Math.random() * 8 + 12
+        opacity: Math.random() * 0.4 + 0.1,
+        size: Math.random() * 6 + 10
       });
     }
 
@@ -99,7 +127,7 @@ const Hero = () => {
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             Assess Software Engineers
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
               skill level by analyzing code
@@ -107,17 +135,17 @@ const Hero = () => {
             <span className="block text-white">in their portfolio</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed">
             Artemis AI analyzes and ranks software engineers' skill levels directly from their codebases. 
             Simply plug and play to GitHub or Visual Studio - our software will read the code and identify 
             if an engineer is skilled enough to undertake your project.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
               Book a Demo
             </button>
-            <button className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
+            <button className="w-full sm:w-auto border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300">
               Learn More
             </button>
           </div>
@@ -125,7 +153,7 @@ const Hero = () => {
       </div>
       
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown className="text-white w-8 h-8" />
+        <ChevronDown className="text-white w-6 h-6 sm:w-8 sm:h-8" />
       </div>
     </section>
   );
