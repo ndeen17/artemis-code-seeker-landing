@@ -12,7 +12,33 @@ const Testimonials = () => {
           </p>
         </div>
         
-        <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 sm:p-8 md:p-12 border border-blue-400/20 max-w-4xl mx-auto mb-12 sm:mb-16">
+        {/* Partner logos moved above testimonial */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-16 sm:mb-20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 sm:p-8 text-center hover:bg-blue-500/20 transition-all duration-300 border border-blue-400/20 flex items-center justify-center min-h-[120px]">
+            <div className="text-white">
+              <div className="text-2xl sm:text-3xl font-bold tracking-wider">VELO</div>
+              <div className="text-xl sm:text-2xl font-bold tracking-wider mt-1">CITY</div>
+            </div>
+          </div>
+          
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 sm:p-8 text-center hover:bg-blue-500/20 transition-all duration-300 border border-blue-400/20 flex items-center justify-center min-h-[120px]">
+            <div className="text-white">
+              <div className="text-xl sm:text-2xl font-bold mb-1">Pome</div>
+              <div className="text-xl sm:text-2xl font-bold">granate</div>
+            </div>
+          </div>
+          
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 sm:p-8 text-center hover:bg-blue-500/20 transition-all duration-300 border border-blue-400/20 flex items-center justify-center min-h-[120px]">
+            <div className="text-white">
+              <div className="text-2xl sm:text-3xl font-bold tracking-wider">
+                MIKR<span className="inline-block w-3 h-3 bg-white rounded-full mx-1 align-middle"></span>N
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Rebecca's testimonial moved below partners */}
+        <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 sm:p-8 md:p-12 border border-blue-400/20 max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
             <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-2xl sm:text-3xl font-bold text-white">
               RH
@@ -25,28 +51,6 @@ const Testimonials = () => {
                 <div className="font-bold text-white text-base sm:text-lg">Rebecca Hudson</div>
                 <div className="text-blue-400 text-sm sm:text-base">CTO at Velocity</div>
               </div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
-          <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 sm:p-8 text-center hover:bg-blue-500/20 transition-all duration-300 border border-blue-400/20 flex items-center justify-center min-h-[120px]">
-            <div className="text-white">
-              <div className="text-xl sm:text-2xl font-bold mb-2">VELO</div>
-              <div className="text-lg sm:text-xl font-semibold">CITY</div>
-            </div>
-          </div>
-          
-          <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 sm:p-8 text-center hover:bg-blue-500/20 transition-all duration-300 border border-blue-400/20 flex items-center justify-center min-h-[120px]">
-            <div className="text-white">
-              <div className="text-lg sm:text-xl font-bold mb-1">Pome</div>
-              <div className="text-lg sm:text-xl font-bold">granate</div>
-            </div>
-          </div>
-          
-          <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 sm:p-8 text-center hover:bg-blue-500/20 transition-all duration-300 border border-blue-400/20 flex items-center justify-center min-h-[120px]">
-            <div className="text-white">
-              <div className="text-xl sm:text-2xl font-bold">MIKR⊙N</div>
             </div>
           </div>
         </div>
