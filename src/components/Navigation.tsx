@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -10,8 +9,19 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-white">
-              Artemis <span className="text-blue-400">by Oncode</span>
+            <div className="flex items-center gap-3">
+              {/* Dot pattern logo */}
+              <div className="grid grid-cols-3 gap-1">
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+              </div>
+              <div className="text-2xl font-bold text-white">
+                Artemis <span className="text-blue-400">by Oncode</span>
+              </div>
             </div>
           </div>
           

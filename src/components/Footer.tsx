@@ -5,8 +5,19 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
-            <div className="text-2xl font-bold text-white mb-4">
-              Artemis <span className="text-blue-400">by Oncode</span>
+            <div className="flex items-center gap-3 mb-4">
+              {/* Dot pattern logo */}
+              <div className="grid grid-cols-3 gap-1">
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+              </div>
+              <div className="text-2xl font-bold text-white">
+                Artemis <span className="text-blue-400">by Oncode</span>
+              </div>
             </div>
             <p className="text-gray-300 max-w-md">
               Revolutionizing software engineer recruitment through AI-powered code analysis and skill assessment.
