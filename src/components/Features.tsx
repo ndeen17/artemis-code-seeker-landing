@@ -59,9 +59,14 @@ const Features = () => {
               Artemis offers a demo of our platform, providing you with a firsthand experience of the advanced tools 
               and features designed to enhance your software engineering recruitment process.
             </p>
-            <button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+            <a
+              href="https://calendly.com/artemis-hiringuk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+            >
               Book a Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>
