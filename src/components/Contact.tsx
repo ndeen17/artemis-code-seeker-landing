@@ -24,7 +24,7 @@ const Contact = () => {
             </p>
             <div className="text-center">
               <a
-                href="https://calendly.com/artemis-demo"
+                href="https://calendly.com/artemis-hiringuk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105"

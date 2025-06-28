@@ -36,9 +36,14 @@ const Navigation = () => {
               <a href="#partners" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
                 Partners
               </a>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+              <a
+                href="https://calendly.com/artemis-hiringuk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+              >
                 Book a Demo
-              </button>
+              </a>
             </div>
           </div>
           
@@ -65,9 +70,14 @@ const Navigation = () => {
             <a href="#partners" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               Partners
             </a>
-            <button className="w-full text-left bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 text-base font-medium">
+            <a
+              href="https://calendly.com/artemis-hiringuk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-left bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 text-base font-medium block"
+            >
               Book a Demo
-            </button>
+            </a>
           </div>
         </div>
       )}
