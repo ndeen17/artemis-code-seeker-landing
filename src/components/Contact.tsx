@@ -1,5 +1,5 @@
 
-import { ExternalLink, Mail, Phone } from 'lucide-react';
+import { ExternalLink, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -46,10 +46,10 @@ const Contact = () => {
             
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 sm:p-8 border border-blue-400/20">
               <div className="flex items-center mb-4">
-                <Phone className="text-blue-400 w-6 h-6 mr-3" />
+                <MapPin className="text-blue-400 w-6 h-6 mr-3" />
                 <h3 className="text-white font-semibold text-lg">ADDRESS</h3>
               </div>
-              <p className="text-gray-300">500 TERRY FRANCINE STREET<br />SAN FRANCISCO, CA 94158</p>
+              <p className="text-gray-300">FORTUNES DOCK<br />1 JAM LANE,<br />LONDON<br />E16 1GT</p>
             </div>
           </div>
         </div>
