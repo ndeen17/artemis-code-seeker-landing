@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -20,7 +21,7 @@ const Navigation = () => {
                 <div className="w-2 h-2 bg-white rounded-full"></div>
               </div>
               <div className="text-2xl font-bold text-white">
-                Artemis <span className="text-blue-400">by Oncode</span>
+                Artemis <span className="text-blue-400 text-lg">by Oncode</span>
               </div>
             </div>
           </div>

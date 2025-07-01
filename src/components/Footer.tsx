@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <footer className="bg-blue-900/50 backdrop-blur-lg border-t border-blue-400/20 py-12 px-4 sm:px-6 lg:px-8">
@@ -16,7 +15,7 @@ const Footer = () => {
                 <div className="w-2 h-2 bg-white rounded-full"></div>
               </div>
               <div className="text-2xl font-bold text-white">
-                Artemis <span className="text-blue-400">by Oncode</span>
+                Artemis <span className="text-blue-400 text-lg">by Oncode</span>
               </div>
             </div>
             <p className="text-gray-300 max-w-md">
