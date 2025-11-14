@@ -63,88 +63,21 @@ const ServicesPage = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className={`mb-16 ${index % 2 === 0 ? '' : 'lg:flex-row-reverse'} lg:flex lg:items-center lg:gap-12`}
+              className="mb-16 bg-slate-800 rounded-2xl p-8 border border-blue-400/20"
             >
-              <div className="lg:w-1/2 mb-8 lg:mb-0">
-                <div className="bg-slate-900 p-8 rounded-lg">
-                  <div className="mb-6">
-                    {service.icon}
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-                    {service.headline}
-                  </h2>
-                  <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                    {service.description}
-                  </p>
-                  <button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
-                    {service.cta}
-                  </button>
+              <div className="text-center">
+                <div className="mb-6 flex justify-center">
+                  {service.icon}
                 </div>
-              </div>
-              
-              <div className="lg:w-1/2">
-                <div className="bg-slate-800 rounded-lg p-8 h-full flex flex-col justify-center">
-                  {index === 0 && (
-                    <div className="text-center">
-                      <h3 className="text-xl font-bold text-white mb-4">What You Get:</h3>
-                      <ul className="text-gray-300 space-y-2 text-left">
-                        <li>• Custom web and mobile applications</li>
-                        <li>• Scalable architecture and clean code</li>
-                        <li>• User-focused design and UX</li>
-                        <li>• Ongoing maintenance and support</li>
-                        <li>• Integration with existing systems</li>
-                      </ul>
-                    </div>
-                  )}
-                  {index === 1 && (
-                    <div className="text-center">
-                      <h3 className="text-xl font-bold text-white mb-4">Artemis Features:</h3>
-                      <ul className="text-gray-300 space-y-2 text-left">
-                        <li>• AI-powered code analysis</li>
-                        <li>• GitHub/GitLab integration</li>
-                        <li>• Skill level assessment</li>
-                        <li>• Portfolio evaluation</li>
-                        <li>• Detailed candidate reports</li>
-                      </ul>
-                    </div>
-                  )}
-                  {index === 2 && (
-                    <div className="text-center">
-                      <h3 className="text-xl font-bold text-white mb-4">Team Roles Available:</h3>
-                      <ul className="text-gray-300 space-y-2 text-left">
-                        <li>• Senior Software Engineers</li>
-                        <li>• UI/UX Designers</li>
-                        <li>• Product Managers</li>
-                        <li>• DevOps Engineers</li>
-                        <li>• Technical Leads</li>
-                      </ul>
-                    </div>
-                  )}
-                  {index === 3 && (
-                    <div className="text-center">
-                      <h3 className="text-xl font-bold text-white mb-4">Specialist Areas:</h3>
-                      <ul className="text-gray-300 space-y-2 text-left">
-                        <li>• Frontend Development (React, Vue, Angular)</li>
-                        <li>• Backend Development (Node.js, Python, .NET)</li>
-                        <li>• Mobile Development (iOS, Android, React Native)</li>
-                        <li>• Data Engineering & Analytics</li>
-                        <li>• Cloud Architecture (AWS, Azure, GCP)</li>
-                      </ul>
-                    </div>
-                  )}
-                  {index === 4 && (
-                    <div className="text-center">
-                      <h3 className="text-xl font-bold text-white mb-4">Support Includes:</h3>
-                      <ul className="text-gray-300 space-y-2 text-left">
-                        <li>• Product strategy and roadmap planning</li>
-                        <li>• Technical architecture guidance</li>
-                        <li>• Team leadership and mentoring</li>
-                        <li>• Agile process implementation</li>
-                        <li>• Long-term growth planning</li>
-                      </ul>
-                    </div>
-                  )}
-                </div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+                  {service.headline}
+                </h2>
+                <p className="text-gray-300 text-lg leading-relaxed mb-6 max-w-3xl mx-auto">
+                  {service.description}
+                </p>
+                <button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                  {service.cta}
+                </button>
               </div>
             </div>
           ))}
