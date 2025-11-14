@@ -41,27 +41,27 @@ const Services = () => {
           </h3>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-slate-900 p-6 rounded-lg hover:bg-slate-700 transition-colors duration-300 group"
+              className="bg-slate-900 p-6 sm:p-8 rounded-lg hover:bg-slate-700 transition-colors duration-300 group"
             >
-              <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                 {service.icon}
               </div>
-              <h4 className="text-xl font-semibold text-white mb-3">
+              <h4 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">
                 {service.title}
               </h4>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                 {service.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+        <div className="text-center mt-8 sm:mt-12 px-4">
+          <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg min-w-[250px]">
             Explore All Services
           </button>
         </div>

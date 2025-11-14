@@ -15,46 +15,46 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
-          <div className="bg-slate-900 rounded-2xl p-8 border border-blue-400/20">
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 text-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 max-w-6xl mx-auto">
+          <div className="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-blue-400/20">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 sm:mb-6 text-center">
               Start Your Project Today
             </h3>
-            <p className="text-gray-300 mb-8 text-center leading-relaxed">
+            <p className="text-gray-300 mb-6 sm:mb-8 text-center leading-relaxed text-sm sm:text-base">
               Whether you need a custom product built, top talent vetted, or a dedicated team assembled, 
               we're here to help you succeed. Book a discovery call to explore possibilities.
             </p>
             <div className="text-center">
-              <button className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg min-w-[200px]">
                 Book a Discovery Call
-                <ExternalLink className="w-5 h-5" />
+                <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
             </div>
           </div>
           
-          <div className="space-y-6">
-            <div className="bg-slate-900 rounded-2xl p-6 border border-blue-400/20 hover:border-blue-400/40 transition-colors">
-              <div className="flex items-center mb-4">
-                <Mail className="text-blue-400 w-6 h-6 mr-3" />
-                <h3 className="text-white font-semibold text-lg">Email Us</h3>
+          <div className="space-y-4 sm:space-y-6">
+            <div className="bg-slate-900 rounded-2xl p-4 sm:p-6 border border-blue-400/20 hover:border-blue-400/40 transition-colors">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <Mail className="text-blue-400 w-5 h-5 sm:w-6 sm:h-6 mr-3" />
+                <h3 className="text-white font-semibold text-base sm:text-lg">Email Us</h3>
               </div>
-              <p className="text-gray-300">sales@artemishiring.co.uk</p>
+              <p className="text-gray-300 text-sm sm:text-base break-all">sales@artemishiring.co.uk</p>
             </div>
             
-            <div className="bg-slate-900 rounded-2xl p-6 border border-blue-400/20 hover:border-blue-400/40 transition-colors">
-              <div className="flex items-center mb-4">
-                <Phone className="text-blue-400 w-6 h-6 mr-3" />
-                <h3 className="text-white font-semibold text-lg">Call Us</h3>
+            <div className="bg-slate-900 rounded-2xl p-4 sm:p-6 border border-blue-400/20 hover:border-blue-400/40 transition-colors">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <Phone className="text-blue-400 w-5 h-5 sm:w-6 sm:h-6 mr-3" />
+                <h3 className="text-white font-semibold text-base sm:text-lg">Call Us</h3>
               </div>
-              <p className="text-gray-300">+44 (0) 20 1234 5678</p>
+              <p className="text-gray-300 text-sm sm:text-base">+44 (0) 20 1234 5678</p>
             </div>
             
-            <div className="bg-slate-900 rounded-2xl p-6 border border-blue-400/20 hover:border-blue-400/40 transition-colors">
-              <div className="flex items-center mb-4">
-                <MapPin className="text-blue-400 w-6 h-6 mr-3" />
-                <h3 className="text-white font-semibold text-lg">Visit Us</h3>
+            <div className="bg-slate-900 rounded-2xl p-4 sm:p-6 border border-blue-400/20 hover:border-blue-400/40 transition-colors">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <MapPin className="text-blue-400 w-5 h-5 sm:w-6 sm:h-6 mr-3" />
+                <h3 className="text-white font-semibold text-base sm:text-lg">Visit Us</h3>
               </div>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-sm sm:text-base">
                 Tech Hub London<br />
                 123 Innovation Street<br />
                 London EC2A 4BX<br />
