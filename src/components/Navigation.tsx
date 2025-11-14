@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +11,8 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex items-center gap-3">
-              {/* Dot pattern logo */}
+            <Link to="/" className="flex items-center gap-3">
+              {/* Logo */}
               <div className="grid grid-cols-3 gap-1">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
                 <div className="w-2 h-2 bg-white rounded-full"></div>
@@ -21,30 +22,28 @@ const Navigation = () => {
                 <div className="w-2 h-2 bg-white rounded-full"></div>
               </div>
               <div className="text-2xl font-bold text-white">
-                Artemis <span className="text-blue-400 text-lg">by Oncode</span>
+                OnCode
               </div>
-            </div>
+            </Link>
           </div>
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#product" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
-                Product
-              </a>
+              <Link to="/" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
+                Home
+              </Link>
+              <Link to="/services" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
+                Services
+              </Link>
               <a href="#about" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
                 About
               </a>
-              <a href="#partners" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
-                Partners
+              <a href="#contact" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
+                Contact
               </a>
-              <a
-                href="https://calendly.com/artemis-hiringuk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
-              >
-                Book a Demo
-              </a>
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                Book a Discovery Call
+              </button>
             </div>
           </div>
           
@@ -62,23 +61,21 @@ const Navigation = () => {
       {isOpen && (
         <div className="md:hidden bg-blue-900/90 backdrop-blur-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#product" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
-              Product
-            </a>
+            <Link to="/" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+              Home
+            </Link>
+            <Link to="/services" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+              Services
+            </Link>
             <a href="#about" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               About
             </a>
-            <a href="#partners" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
-              Partners
+            <a href="#contact" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+              Contact
             </a>
-            <a
-              href="https://calendly.com/artemis-hiringuk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full text-left bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 text-base font-medium block"
-            >
-              Book a Demo
-            </a>
+            <button className="w-full text-left bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 text-base font-medium block">
+              Book a Discovery Call
+            </button>
           </div>
         </div>
       )}

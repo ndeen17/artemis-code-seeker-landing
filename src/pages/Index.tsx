@@ -1,7 +1,9 @@
 
 import Hero from '@/components/Hero';
-import Features from '@/components/Features';
-import Platforms from '@/components/Platforms';
+import WhatWeDo from '@/components/WhatWeDo';
+import Services from '@/components/Services';
+import WhyChoose from '@/components/WhyChoose';
+import Regions from '@/components/Regions';
 import About from '@/components/About';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
@@ -13,8 +15,10 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-slate-800 to-blue-900">
       <Navigation />
       <Hero />
-      <Platforms />
-      <Features />
+      <WhatWeDo />
+      <Services />
+      <WhyChoose />
+      <Regions />
       <About />
       <Testimonials />
       <Contact />
