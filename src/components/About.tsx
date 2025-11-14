@@ -1,24 +1,21 @@
 
-import { Circle, Square, Triangle, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const About = () => {
   const aboutItems = [
     {
       title: 'Our Mission',
       description: 'Turning Technology Into a Growth Tool. Many businesses struggle with tech—not because they lack ideas, but because they lack the right people or clear execution. Our mission is to change that.',
-      icon: <Circle className="w-6 h-6 text-white" />,
       gradient: 'from-blue-500 to-cyan-500'
     },
     {
       title: 'Our Approach',
       description: 'We take time to understand your goals, workflows, and customer experience. From there, we assemble the right team, develop the right solution, and refine it continuously after launch.',
-      icon: <Square className="w-6 h-6 text-white" />,
       gradient: 'from-purple-500 to-pink-500'
     },
     {
       title: 'What Makes Us Different',
       description: 'Human-Centered Execution, Right Talent Every Time, and Long-Term Partnership. We don\'t disappear after launch—we stay to support growth and improvements.',
-      icon: <Triangle className="w-6 h-6 text-white" />,
       gradient: 'from-green-500 to-emerald-500'
     }
   ];
