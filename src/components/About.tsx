@@ -38,9 +38,7 @@ const About = () => {
               key={item.title}
               className="group bg-slate-800 rounded-2xl p-6 sm:p-8 hover:bg-slate-700 transition-all duration-300 border border-blue-400/20 hover:border-blue-400/40 transform hover:-translate-y-2"
             >
-              <div className={`w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br ${item.gradient} rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                {item.icon}
-              </div>
+              <div className={`w-full h-2 bg-gradient-to-r ${item.gradient} rounded-full mb-4 sm:mb-6`}></div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4 group-hover:text-blue-400 transition-colors">
                 {item.title}
               </h3>
