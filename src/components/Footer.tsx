@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900/50 backdrop-blur-lg border-t border-blue-400/20 py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-slate-900 border-t border-slate-700 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-blue-400/20 mt-12 pt-8 text-center">
+        <div className="border-t border-slate-700 mt-12 pt-8 text-center">
           <p className="text-gray-400">
             ©2025 OnCode. All rights reserved.
           </p>
