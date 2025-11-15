@@ -50,7 +50,7 @@ const About = () => {
         </div>
 
         <div className="text-center px-4">
-          <div className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer min-w-[180px] w-full sm:w-auto max-w-[300px]">
+          <div className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer min-w-[180px] w-full sm:w-auto max-w-[300px] mx-auto">
             Work With Us
             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
           </div>

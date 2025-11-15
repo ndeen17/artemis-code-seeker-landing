@@ -33,11 +33,8 @@ const Hero = () => {
             We bridge the gap between your vision and the technology needed to make it real.
           </p>
           
-          <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center items-center px-4">
-            <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg min-w-[200px]">
-              Start a Project
-            </button>
-            <button className="w-full sm:w-auto border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 min-w-[200px]">
+          <div className="flex justify-center px-4">
+            <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg min-w-[250px] max-w-[400px]">
               Book a Consultation
             </button>
           </div>

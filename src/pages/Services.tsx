@@ -75,7 +75,7 @@ const ServicesPage = () => {
                 <p className="text-gray-300 text-lg leading-relaxed mb-6 max-w-3xl mx-auto">
                   {service.description}
                 </p>
-                <button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 min-w-[200px] max-w-[300px] mx-auto">
                   {service.cta}
                 </button>
               </div>

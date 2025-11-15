@@ -61,7 +61,7 @@ const Services = () => {
         </div>
 
         <div className="text-center mt-8 sm:mt-12 px-4">
-          <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg min-w-[250px]">
+          <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg min-w-[200px] max-w-[350px] mx-auto">
             Explore All Services
           </button>
         </div>

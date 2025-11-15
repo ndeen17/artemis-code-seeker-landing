@@ -25,7 +25,7 @@ const Contact = () => {
               we're here to help you succeed. Book a discovery call to explore possibilities.
             </p>
             <div className="text-center">
-              <button className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg min-w-[200px]">
+              <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg min-w-[200px] max-w-[350px] mx-auto">
                 Book a Discovery Call
                 <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
