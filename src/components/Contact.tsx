@@ -46,7 +46,7 @@ const Contact = () => {
                 <Phone className="text-blue-400 w-5 h-5 sm:w-6 sm:h-6 mr-3" />
                 <h3 className="text-white font-semibold text-base sm:text-lg">Call Us</h3>
               </div>
-              <p className="text-gray-300 text-sm sm:text-base">+44 (0) 20 1234 5678</p>
+              <p className="text-gray-300 text-sm sm:text-base">+44 7760 901565</p>
             </div>
             
             <div className="bg-slate-900 rounded-2xl p-4 sm:p-6 border border-blue-400/20 hover:border-blue-400/40 transition-colors">
